@@ -1,0 +1,61 @@
+main {
+    .slideshow-container {
+        position: relative;
+        .slides {
+            .mySlides {
+                .text, .content, .button-explore {
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                }
+                .text {
+                    bottom: 400px;
+                    color: $secondary-color;
+                    text-shadow: 0 0 4px white;
+                }
+                .content {
+                    bottom: 370px;
+                    color: $text-color-light;
+                }
+                .button-explore {
+                    bottom: 270px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include button-style(rgb(110, 60, 137), #ffffff);
+                }
+            }
+        }
+    }
+    #forum {
+        background-color: $secondary-color;
+        color: white;
+        padding: 40px 0;
+        .form-container {
+            .form-line {
+                form {
+                    @include center-flex;
+                    gap: 16px;
+                }
+                input {
+                    color: #ccc;
+                    padding: 16px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                    background-color: $secondary-color;
+                }
+            }
+            .form-search {
+                @include button-style($primary-color, #ffffff);
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        .input-row {
+            @include center-flex;
+            flex-direction: row;
+            .question {
+                font-size: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+header {
+    background-color: $secondary-color;
+    #navigation-bar {
+        padding: 20px;
+        .logo img {
+            max-height: 50px;
+        }
+        .nav_links ul {
+            @include center-flex;
+            gap: 20px;
+        }
+        .contact, .social-media, .search {
+            @include center-flex;
+            gap: 10px;
+        }
+    }
+}
